@@ -6,3 +6,6 @@
 
 # Private keys
 *.pem
+
+# Idea
+.idea
