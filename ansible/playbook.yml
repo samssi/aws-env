@@ -2,3 +2,4 @@
   roles:
     - software
     - mysite-rest-app
+    - mysite-auth-app
