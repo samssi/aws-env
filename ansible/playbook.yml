@@ -1,3 +1,4 @@
 - hosts: mysite-nodes
   roles:
     - software
+    - mysite-rest-app

@@ -9,3 +9,4 @@
 
 - name: Enable ec2-user to be able to use Docker
   user: name=ec2-user groups=docker append=yes
+
