@@ -1,3 +1,6 @@
+# Ansible production locations
+/ansible/inventory-prod*
+
 # Python venv
 .venv/
 
