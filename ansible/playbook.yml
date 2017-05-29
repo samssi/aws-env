@@ -1,0 +1,3 @@
+- hosts: mysite-nodes
+  roles:
+    - software

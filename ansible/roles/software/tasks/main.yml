@@ -1,0 +1,11 @@
+- name: Update OS packages to latest versions
+  yum: name=* state=latest
+
+- name: Install Docker
+  yum: name=docker state=latest
+
+- name: Enable Docker service
+  service: name=docker enabled=yes state=started
+
+- name: Enable ec2-user to be able to use Docker
+  user: name=ec2-user groups=docker append=yes
