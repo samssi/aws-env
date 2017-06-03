@@ -1,5 +1,5 @@
 - name: Create mysite-rest host volumes directory
-  file: path=/home/ec2-user/.mysite-rest-config state=directory owner=ec2-user group=docker mode=0770
+  file: path=/home/ec2-user/.mysite-rest-config state=directory owner=1000 group=1000 mode=0770
 
 - name: Add production.json to config directory
-  template: src=production.json.j2 dest=/home/ec2-user/.mysite-rest-config/production.json owner=ec2-user group=docker mode=0770
+  template: src=production.json.j2 dest=/home/ec2-user/.mysite-rest-config/production.json owner=1000 group=1000 mode=0770

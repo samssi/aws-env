@@ -1,11 +1,11 @@
 - name: Create mysite-auth-config host volumes directory
-  file: path=/home/ec2-user/.mysite-auth-config state=directory owner=ec2-user group=docker mode=0770
+  file: path=/home/ec2-user/.mysite-auth-config state=directory owner=1000 group=1000 mode=0770
 
 - name: Add production.json to config directory
-  template: src=production.json.j2 dest=/home/ec2-user/.mysite-auth-config/production.json owner=ec2-user group=docker mode=0770
+  template: src=production.json.j2 dest=/home/ec2-user/.mysite-auth-config/production.json owner=1000 group=1000 mode=0770
 
 - name: Create mysite-credentials host volumes directory
-  file: path=/home/ec2-user/.mysite-credentials state=directory owner=ec2-user group=docker mode=0770
+  file: path=/home/ec2-user/.mysite-credentials state=directory owner=1000 group=1000 mode=0770
 
 - name: Add credentials.json to credentials directory
-  template: src=credentials.json.j2 dest=/home/ec2-user/.mysite-credentials/credentials.json owner=ec2-user group=docker mode=0770
+  template: src=credentials.json.j2 dest=/home/ec2-user/.mysite-credentials/credentials.json owner=1000 group=1000 mode=0770
