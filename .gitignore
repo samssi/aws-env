@@ -14,4 +14,3 @@
 /private
 /ansible/roles/mysite-rest-app/templates/
 /ansible/roles/mysite-auth-app/templates/
-/ansible/roles/mysite-auth-app/templates/
