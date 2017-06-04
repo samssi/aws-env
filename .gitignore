@@ -12,6 +12,6 @@
 
 # Private stuff
 /private
-/ansible/roles/mysite-rest-app/templates/production.json.j2
-/ansible/roles/mysite-auth-app/templates/credentials.json.j2
-/ansible/roles/mysite-auth-app/templates/production.json.j2
+/ansible/roles/mysite-rest-app/templates/
+/ansible/roles/mysite-auth-app/templates/
+/ansible/roles/mysite-auth-app/templates/
