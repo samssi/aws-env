@@ -5,7 +5,7 @@ clean:
 	@rm -rf .venv
 
 .venv/bin/activate: requirements.txt
-	@test -d .venv || pyvenv-3.5 .venv
+	@test -d .venv || python3 -m venv .venv
 	.venv/bin/pip install --upgrade pip
 	.venv/bin/pip install --no-cache-dir -Ur requirements.txt || exit -1
 	touch .venv/bin/activate
